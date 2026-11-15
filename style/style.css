@@ -1,0 +1,299 @@
+/* * {
+  padding: 0%;
+  margin: 0%;
+}
+
+h1 {
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  padding: 20px;
+}
+
+h2 {
+  font-style: italic;
+  text-align: center;
+  background-color: aliceblue;
+  color: black;
+  padding: 20px;
+}
+
+nav ol {
+  background-color: aliceblue;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  width: 150px;
+}
+
+nav li:hover {
+  background-color: rgb(205, 228, 247);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+  margin: 60px;
+}
+
+article {
+  width: 80%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 200%;
+  background-color: aliceblue;
+  color: black;
+  margin-top: 40px;
+}
+
+footer p {
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  margin: 0 8px;
+}
+
+footer a img {
+  width: 25px;
+  height: 25px;
+}
+ */
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050b16;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+header h1 {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 3px 3px 0 #087bc5;
+}
+
+h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header h2 {
+  background-color: #050b16;
+  color: white;
+  padding: 35px 20px;
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+
+nav ol {
+  background-color: #050b16;
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+  padding: 15px;
+}
+
+nav li {
+  display: inline-flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav li:hover {
+  background-color: #12365a;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  color: #36a9ff;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+article {
+  width: 95%;
+}
+
+/* SECCIONES DE TRAYECTORIA */
+
+article section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #101c30;
+  border: 1px solid #1765a5;
+  border-radius: 15px;
+  margin-bottom: 22px;
+  padding: 20px;
+  gap: 15px;
+}
+
+article section h2 {
+  width: 100%;
+  background-color: transparent;
+  color: #36a9ff;
+  text-align: left;
+  font-size: 25px;
+  padding: 0;
+  font-style: normal;
+}
+
+article section p {
+  flex: 1;
+  min-width: 250px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e7f0;
+}
+
+article section img {
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* LÍNEA DE TIEMPO */
+
+article section:has(ul) {
+  display: block;
+}
+
+article section ul {
+  margin: 15px 25px;
+  line-height: 2;
+  color: #e0e7f0;
+}
+
+article section li strong {
+  color: #36a9ff;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+  width: 100%;
+  background-color: #050b16;
+  color: white;
+  margin-top: 40px;
+  padding: 30px;
+  text-align: center;
+  border-top: 2px solid #168fe5;
+}
+
+footer a {
+  margin: 0 10px;
+}
+
+footer a img {
+  width: 28px;
+  height: 28px;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+small {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  color: #b8c5d6;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 650px) {
+  header h1 {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 10px;
+    font-size: 12px;
+    width: auto;
+  }
+
+  .container {
+    margin: 15px;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  article section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  article section img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .familia img {
+    width: 100%;
+  }
+
+  article section h2 {
+    font-size: 21px;
+  }
+
+  .familia h2 {
+    font-size: 23px;
+  }
+}
